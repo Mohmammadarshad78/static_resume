@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-img">
+        <div class="resume-container">
+            <!-- Personal Information -->
+            <section class="personal-info">
+                <img src="/profilepic.jpeg" alt="Profile Picture" class="profile-pic">
+                <h1>Mohammad Arshad</h1>
+                <p>Contact: mohammadarshadqadri92@gmail.com | +92 323 2434698 </p>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education" id="education-section">
+                <h2>Education</h2>
+                <p>Inter</p>
+                <p>Rawalpindi Board</p>
+                <p>Diploma in Computer Hardware & Networking </p>
+                <p>Microsoft Automation Course</p>
+                <p>Certified Cloud
+                    Applied Generative AI
+                    Engineer (GenEng) (continue)</p>
+                <span id="education-visibility" class="visibility-status">Yes</span>
+            </section>
+            <button onclick="toggleSection('education')">Education</button>
+
+            <!-- Skills Section -->
+            <section class="skills" id="skills-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript <img src="/javascript-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>typeScript <img src="/typescript-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>HTML <img src="/HTML5_logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>CSS <img src="/CSS-Logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>React <img src="/react-logo.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>Node.js <img src="/nodejs.png" alt="JavaScript Logo" class="skill-logo"></li>
+                    <li>Wordpress <img src="/wordpress.png" alt="JavaScript Logo" class="skill-logo"></li>
+
+                </ul>
+                <span id="skills-visibility" class="visibility-status">Yes</span>
+            </section>
+            <button onclick="toggleSection('skills')">Skills</button>
+
+            <!-- Work Experience Section -->
+            <section class="work-experience" id="work-experience-section">
+                <h2>Work Experience</h2>
+                <p>Software Developer fresher</p>
+                <p>Jan 2023 - Present</p>
+                <span id="work-experience-visibility" class="visibility-status">Yes</span>
+            </section>
+            <button onclick="toggleSection('work-experience')">Work Experience</button>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
